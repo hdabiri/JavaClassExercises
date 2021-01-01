@@ -1,3 +1,5 @@
+// I usually comment out the method calls in order to test one program at a time.
+
 import java.util.Scanner;
 
 public class Chapter8Exercise {
@@ -9,7 +11,8 @@ public class Chapter8Exercise {
 				
 		// String s = "box"; 
 	    // stringPermutation(s, ""); 
-
+		   
+		   
 	}
 	
 	static void temperature() {
