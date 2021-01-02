@@ -1,0 +1,26 @@
+How Long it will take to Memorize the Qur'an
+==============================================
+
+This program is to calculate how long it will take to memorize the entire Qur'an based on number of lines per day.
+ * There are 8,815 lines in the Noble Qur'an.
+ * Depending on how many lines per day the participant enters in the program, 
+ * it will calculate how many days it will take to complete the memorization of the entire Qur'an.
+ 
+ Attributes:
+ * I will have to create multiple variables to store several components of the code.
+ * Variables such as Years, Months, days, and total number of lines. 
+ 
+ Operations:
+ * I will need to collect the data from the user about how many lines they plan to memorize per day.
+   This will be done using the Scanner method to collect input from the user. 
+ * I will need to use arithmetic expressions to calculate how long the memorizationw ill take,
+   based on the input collected from the user and the fixed factors (number of lines in the Qur'an).
+ 
+ 
+ Assumptions:
+ * In this code I have assumed that a month is 30 days long and that a year is 365 days. 
+ * It does not account for leap years and days that are shorter or longer than 30
+ * This is important to make the program easier to code at this stage of my learning process. 
+ * I have also excluded the lines of the Quran that are surah headers and Bismillah.
+ * These normally amount to 227 lines. (114*2 = 228. subtracting 1 line for the absence of bismillah for surat Taubah = 227)
+ * I manually counted the lines for suratul Faatihah and the first page of Suratul Baqarah because they are not full pages.
