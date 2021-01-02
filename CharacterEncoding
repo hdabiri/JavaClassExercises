@@ -17,4 +17,3 @@ iv. How is character encoding related to fonts?
 Fonts are various glyphs used to represent specific characters. Computers only understand certain codes/code points that are used to represent fonts.
 Each font is mapped to a specific code point in order for the computer to understand it and use it. 
 
-Done!!
