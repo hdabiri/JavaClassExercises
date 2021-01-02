@@ -21,6 +21,6 @@ This program is to calculate how long it will take to memorize the entire Qur'an
  * In this code I have assumed that a month is 30 days long and that a year is 365 days. 
  * It does not account for leap years and days that are shorter or longer than 30
  * This is important to make the program easier to code at this stage of my learning process. 
- * I have also excluded the lines of the Quran that are surah headers and Bismillah.
+ * I have also excluded the lines of the Qur'an that are surah headers and Bismillah.
  * These normally amount to 227 lines. (114*2 = 228. subtracting 1 line for the absence of bismillah for surat Taubah = 227)
  * I manually counted the lines for suratul Faatihah and the first page of Suratul Baqarah because they are not full pages.

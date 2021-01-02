@@ -1,0 +1,37 @@
+ There are seven basis of programming.
+ Primitive types, Statements, Functions, Arrays, Strings, Input/Output, and finally Data Abstraction.
+ 
+ These basis are building blocks that are used together to develop programs aimed at solving specific problems viz programming.
+ These seven basis are used together to build a program. Simpler programs only use some of the seven basis, 
+ while more robust programs use more of the seven basis. The individual components are as follows:
+ 
+ Primitive Data Types - These are the most basic data types that are used in Java Programming. 
+ There are eight basic primitive Data types namely, int, short, long, float, double, byte, char, and boolean.
+ These data types are fixed and predefined, therefore Java interprets them in a specific way. 
+ They individually store different types of data.
+ There are also non-primitive data types in Java and these can be coined by the programmer to represent values, or to call methods/functions.
+ 
+ Statements - Statements in Java specify actions to be taken in a Java program. 
+ They can be expressions, declarations, control-flow statements, used to call methods, or to create objects of a class.
+ 
+ Functions - These are also known as methods and they are made up of primitive types and statements. 
+ Functions are blocks of code that are aimed at solving specific aspects of a problem in programming.
+ A simple program may comprise only of one function, while a combination of functions make up a more complicated program.
+ 
+ Arrays - These are used to store multiple values in a single type variable. 
+ In some programs, there is a need to store multiple values or information in order to reuse the data in a subsequent step.
+ Such information is store in Arrays. The information in arrays can be manipulated as well.
+ 
+ Strings - String is actually a class in Java and whenever we use it in programming, we actually are using an object of this class
+  to store characters surrounded by double quotes. Strings are also used in functions and other aspects of the 7 basis of programming.
+  
+ Input/Output - Inputs are ways to enter/collect data from the user, in order to use it in the program.
+ They could be gotten from actual devices like the Keyboard of a computer or they could be files that are invoked in the program.
+ Outputs are the results the program provides after completing its process. It can be printed on to actual devices like the computer screen.
+ It can also be saved in a file for further review or use in a different part of the program.
+ 
+ Data Abstraction - This is when certain portions of a program are kept hidden from the user by way of hiding some of the code in an abstract class or interface.
+ Only essential information is made visible to the user, sometimes because the details of the process are not necessary for the user to interact with. 
+ Data Abstraction is also used to protect fundamental parts of a program from being altered inadvertently by multiple users.
+ 
+ All of these basics are essential to understand in order to successfully understand what programming entails and how to maximize their functions to develop solutions to complex, computer-solvable problems.
