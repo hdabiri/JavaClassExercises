@@ -1,0 +1,20 @@
+i. Why do we need encoding?
+Computers do not understand the language we speak as humans.
+They function on electrical pulses and we easily represent those with 0s and 1s.
+Therefore whenever we interact with a computer, our data must be decoded (changed from e.g. English, to 0s and 1s).
+The computer then uses the format it understands, and processes our request.
+AFterwards, the computer encodes its results (converts the 0s and 1s back to English) for us to understand. 
+
+ii. What are the available options?
+There are several options for encoding data, based on the code unit size.
+Some of them consist of code units using 7 bits (ASCII), some have 8 bits (UTF-8), some have 16 bits (UTF-16), and another has 32 bits (UTF-32).
+
+iii. What encoding standard is common today?
+The most common encoding standard today is Unicode. It is an encoding standard that unifies all other encoding standard. 
+ASCII is the de-facto baseline for all encodings, and it maps 1:1 unto UTF-8 (Unicode with 8 bits).
+
+iv. How is character encoding related to fonts?
+Fonts are various glyphs used to represent specific characters. Computers only understand certain codes/code points that are used to represent fonts.
+Each font is mapped to a specific code point in order for the computer to understand it and use it. 
+
+Done!!
