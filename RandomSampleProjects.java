@@ -21,6 +21,7 @@ public class RandomSampleProjects {
 		System.out.println(fnumber+ " mod " +snumber +" = "+ (fnumber%snumber));
 		System.out.println(fnumber+ " * " +snumber +" = "+ (fnumber*snumber));
 
+		System.out.println("I think it works");
 		
 		keyboard.close();
 		
