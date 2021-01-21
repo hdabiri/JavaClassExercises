@@ -4,8 +4,8 @@ public class Chapter11and12Exercises {
 
 	public static void main(String[] args) {
 		
-		daysOfTheWeek();
-		timeToEat();
+//		daysOfTheWeek();  // I always comment out the other methods to test them one at a time.
+//		timeToEat();
 		tinyCalculator();
 	}
 
@@ -57,7 +57,7 @@ public class Chapter11and12Exercises {
 		System.out.println("For times in the PM, please enter 13 for 1pm, 14 for 2pm .. and so on");
 		System.out.println("========================================================");
 		
-		System.out.println("What tims is it now? ");
+		System.out.println("What time is it now? ");
 		Scanner keyboard = new Scanner(System.in);
 		int time = keyboard.nextInt();
 		
@@ -97,19 +97,20 @@ public class Chapter11and12Exercises {
 		double num2 = keyboard.nextDouble();
 		System.out.println("Enter your arithmetic operation ( +, -, *, / ) ");
 		char operator = keyboard.next().charAt(0);
-				
+						
 		switch (operator) {
 		case '+':
-			System.out.println(num1 + " + " + num2 + " = " + num1 + num2);
+			System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
 			break;
-//		case '-':
-//	        System.out.println(num1 + " - " + num2 + " = " + num1 - num2);
-//	        break;
+		case '-':
+	        System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+	        break;
+
 		case '*':
-			System.out.println(num1 + " * " + num2 + " = " + num1 * num2);
+			System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
 			break;
 		case '/':
-			System.out.println(num1 + " / " + num2 + " = " + num1 / num2);
+			System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
 			break;
 
 		default:
