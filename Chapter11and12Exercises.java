@@ -1,12 +1,18 @@
+import java.awt.print.Printable;
+import java.util.Random;
 import java.util.Scanner;
+
+import jdk.jshell.SourceCodeAnalysis.Completeness;
 
 public class Chapter11and12Exercises {
 
 	public static void main(String[] args) {
+		// I always comment out the other methods to test them one at a time.
 		
-//		daysOfTheWeek();  // I always comment out the other methods to test them one at a time.
+//		daysOfTheWeek();  
 //		timeToEat();
-		tinyCalculator();
+//		tinyCalculator();
+		randomConditionalExercise();
 	}
 
 	public static void daysOfTheWeek() {
@@ -120,4 +126,24 @@ public class Chapter11and12Exercises {
 		}
 		keyboard.close();
 	}
+	
+	public static void randomConditionalExercise() {
+		
+		//Random randomNum = new Random();
+		int randomFixed = 5;
+		System.out.println("Please enter a random integer between 0 and 9: ");
+		Scanner keyboard = new Scanner(System.in);
+		int num1 = keyboard.nextInt();
+		int yes;
+		if (randomFixed == num1) {
+			System.out.println("You win!");
+			
+		}else {
+			System.out.println("You Lose!");
+		}
+		//unable to complete the examples on page 264 using the conditional statement.
+		//yes = (num1 == 5) ? System.out.println("You Win!") : System.out.println("You Lose!");
+		keyboard.close();
+	}
+	
 }
