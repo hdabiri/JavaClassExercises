@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 
@@ -5,9 +6,11 @@ public class Chapter9Exercises {
 
 	public static void main(String[] args) {
 		
-	//ifStatementsExamples();
-	//whatKindOfNumber();
-	trafficLight();
+	//	ifStatementsExamples();
+	//	whatKindOfNumber();
+	//	trafficLight();
+	//	guessingGame();
+		convertingLengths();
 }
 
 	public static void ifStatementsExamples() {
@@ -80,6 +83,50 @@ public class Chapter9Exercises {
 		}
 		keyboard.close();
 		
+	}
+	public static void guessingGame() {
+		
+		System.out.println("This program will test your guess against a randomly generated number");
+		System.out.println("Take a guess between 1 and 10, and enter your guess here -> ");
+		Scanner keyboard = new Scanner(System.in);
+		Random myRandom = new Random();
+		int genRandom, guessNum;
+		genRandom = myRandom.nextInt(10) + 1;
+		guessNum = keyboard.nextInt();
+		
+		if (genRandom == guessNum) {
+			System.out.println("You win!");
+		} else {
+			System.out.println("You lose!");
+		}
+		keyboard.close();
+		
+	}
+	
+	public static void convertingLengths() {
+		
+		System.out.println("This program will read your input (in meters) and convert it to centimeters or millimeters");
+		System.out.println("Please enter a measurement in whole number, then space, then 'c' for centimeter, or 'm' for millimeter.");
+		 Scanner keyboard = new Scanner(System.in);
+		 int measure, result;
+		 char changeTo, space;
+		 
+		 measure = keyboard.nextInt();
+		 space = keyboard.findWithinHorizon(".", 0).charAt(0);
+		 changeTo = keyboard.findWithinHorizon(".", 0).charAt(0);
+		 
+		 if (changeTo == 'c') {
+			result = measure * 100;
+			System.out.println("Your measurement in centimeters is"+space + result + ".");
+			
+		} else if (changeTo == 'm'){
+			result = measure * 1000;
+			System.out.println("Your measurement in millimeters is"+space+ result+ ".");
+		} else {
+			System.out.println("Please verify you followed the instructions above correctly.");
+		}
+		 keyboard.close();
+			
 		
 	}
 }
