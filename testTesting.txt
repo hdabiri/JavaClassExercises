@@ -1,0 +1,5 @@
+
+How do i add text to this file in my new branch?
+I have added this text file so that I can practice my Git skills.
+Hoping to be a guru at this in no time bi IthniLLAH.
+
