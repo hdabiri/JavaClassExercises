@@ -7,11 +7,33 @@ public class Chapter14And15Exercises {
 	// seeingStars();
 	// seeingStars1();
 	// repeatName();
-	currencyConversion();
+	// currencyConversion();
+		sampleDoWhile();
 	
 	}
 	
 	
+		public static void sampleDoWhile() {
+			 Scanner keyboard = new Scanner(System.in);
+		        int num;
+		        char reply;
+
+		        do {
+		            System.out.print("Enter a number: ");
+		            num = keyboard.nextInt();
+		            System.out.println(num + "\tDo you want to continue? y or n");
+		            
+		            reply = keyboard.findWithinHorizon(".", 0).charAt(0);
+		            System.out.println();
+		        } while (reply != 'n');
+
+		        System.out.println("There you go!");
+		        
+		        keyboard.close();
+		
+	}
+
+
 		public static void currencyConversion() {
 		
 		double naira, rate = 500;
@@ -27,21 +49,22 @@ public class Chapter14And15Exercises {
 
 
 		public static void repeatName() {
-			Scanner keyboard = new Scanner(System.in);
+			@SuppressWarnings("resource")
+			Scanner input = new Scanner(System.in);
 			int howMany, i;
 			String usersName;
 			
 			System.out.println("Please enter your name and how many times you want it repeated");
 			
-			usersName = keyboard.next();
-			howMany = keyboard.nextInt();
+			usersName = input.next();
+			howMany = input.nextInt();
 			System.out.println();
 			
 			for (i = 0; i < howMany; i++) {
 				System.out.println(usersName);
 								
 			}
-			keyboard.close();
+			input.close();
 			
 	}
 
