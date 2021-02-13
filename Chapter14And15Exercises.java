@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Chapter14And15Exercises {
 
 	public static void main(String[] args) {
-	 loopSoup();
-	 seeingStars();
+	// loopSoup();
+	// seeingStars();
 	seeingStars1();
 
 	}
