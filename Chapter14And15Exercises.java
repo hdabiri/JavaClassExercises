@@ -4,36 +4,90 @@ public class Chapter14And15Exercises {
 
 	public static void main(String[] args) {
 	// loopSoup();
-	 seeingStars();
-	seeingStars1();
-
+	// seeingStars();
+	// seeingStars1();
+	// repeatName();
+	currencyConversion();
+	
 	}
 	
-	private static void seeingStars1() {
-		Scanner keyboard = new Scanner(System.in);
-		int stars, i;
-		char ans;
+	
+		public static void currencyConversion() {
 		
-		System.out.println("Do you want to see a row of stars? Type 'y' or 'n'");
-		ans = keyboard.findWithinHorizon(".", 0).charAt(0);
+		double naira, rate = 500;
 		
-		while (ans == 'y') {
-			System.out.println("How many stars do you want to see?");
-			stars = keyboard.nextInt();
-			
-			i = 1;
-			while (i <= stars) {
-			System.out.print("*");
-			i++;
-			}
+		System.out.println("Dollar\tNaira");
+		for (int i = 1; i <= 10; i++) {
+			naira = i * rate;
+			System.out.println(i + "\t" + naira);
 			System.out.println();
-			System.out.println("---");
-						
+		}
+		
+	}
+
+
+		public static void repeatName() {
+			Scanner keyboard = new Scanner(System.in);
+			int howMany, i;
+			String usersName;
+			
+			System.out.println("Please enter your name and how many times you want it repeated");
+			
+			usersName = keyboard.next();
+			howMany = keyboard.nextInt();
+			System.out.println();
+			
+			for (i = 0; i < howMany; i++) {
+				System.out.println(usersName);
+								
+			}
+			keyboard.close();
+			
+	}
+
+
+
+
+
+	//A new method below for a different program
+		public static void seeingStars1() {
+			Scanner keyboard = new Scanner(System.in);
+			int stars, i;
+			char ans;
+			
 			System.out.println("Do you want to see a row of stars? Type 'y' or 'n'");
 			ans = keyboard.findWithinHorizon(".", 0).charAt(0);
-		}
-		System.out.println("That was fun. We should do it again sometime!");
-		keyboard.close();
+			
+			while (ans == 'y') {
+				System.out.println("How many stars do you want to see?");
+				stars = keyboard.nextInt();
+				
+				i = 1;
+				while (i <= stars) {
+				System.out.print("*");
+				i++;
+				}
+				System.out.println();
+				System.out.println("---");
+							
+				System.out.println("Do you want to see a row of stars? Type 'y' or 'n'");
+				ans = keyboard.findWithinHorizon(".", 0).charAt(0);
+			}
+			System.out.println("That was fun. We should do it again sometime!");
+			keyboard.close();
+	}
+	
+	//A new method below for a different program
+		public static void seeingStars() {
+			Scanner keyboard = new Scanner(System.in);
+			System.out.println("How many stars do you want to see?");
+			int stars = keyboard.nextInt();
+			int i = 1;
+			while (i <= stars) {
+				System.out.print("*");
+				i++;
+			}
+			keyboard.close();
 	}
 	
 	//A new method below for a different program
@@ -56,17 +110,8 @@ public class Chapter14And15Exercises {
 		
 	}
 	
-	//A new method below for a different program
-	private static void seeingStars() {
-		Scanner keyboard = new Scanner(System.in);
-		System.out.println("How many stars do you want to see?");
-		int stars = keyboard.nextInt();
-		int i = 1;
-		while (i <= stars) {
-			System.out.print("*");
-			i++;
-		}
-		keyboard.close();
-	}
+	
+	
+	
 
 }
