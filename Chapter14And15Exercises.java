@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Chapter14And15Exercises {
 
 	public static void main(String[] args) {
-	// loopSoup();
+	 loopSoup();
 	 seeingStars();
 	seeingStars1();
 
