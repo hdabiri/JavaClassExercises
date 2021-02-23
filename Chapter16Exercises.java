@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 //import java.io.PrintStream;
 import java.util.Scanner;
 
+
 public class Chapter16Exercises {
 
 	public static void main(String[] args) throws FileNotFoundException {
@@ -14,10 +15,97 @@ public class Chapter16Exercises {
 		// displayAllElement();
 		// displaySomeElements();
 		// generatingSquares();
-		findOneVancany();
-		
+		// findOneVancany();
+		// totalGuests();
+		// parallelArrays();
+		decipheringWords();
+				
 		
 	}
+
+	public static void decipheringWords() {
+		char[] cipher = {'s','f', 'k', 'l', 'd', 'o', 'h', 'z', 'm', 'b',
+                't', 'a', 'n', 'g', 'u', 'v', 'i', 'q', 'x', 'w', 'y', 'c',
+                'j', 'r', 'p', 'e' };
+        char[] plain =  { 'e', 'q', 's', 'f', 'i', 'n', 'h', 'u', 'r', 'k',
+                'g', 'z', 'c', 'y', 'x', 'l', 'm', 'd', 'w', 'a', 'b', 't',
+                'p', 'j', 'v', 'o' };
+        
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Type a word or string of letters to see another! ");
+        char input = keyboard.findWithinHorizon(".", 0).charAt(0);
+		
+        while (input !=' ') {
+	        int index = 0;
+			
+			while (index < 26 && cipher[index] != input) {
+				index ++;
+			}
+        	if(index < 26) {
+					System.out.println("Your corresponding letter(s) or word is: "+ plain[index]);
+			}
+        	input = keyboard.findWithinHorizon(".", 0).charAt(0);
+		}
+		 keyboard.close();
+		
+	}
+	
+	
+	
+
+	public static void parallelArrays() {
+		
+		char[] cipher = {'s','f', 'k', 'l', 'd', 'o', 'h', 'z', 'm', 'b',
+                't', 'a', 'n', 'g', 'u', 'v', 'i', 'q', 'x', 'w', 'y', 'c',
+                'j', 'r', 'p', 'e' };
+        char[] plain =  { 'e', 'q', 's', 'f', 'i', 'n', 'h', 'u', 'r', 'k',
+                'g', 'z', 'c', 'y', 'x', 'l', 'm', 'd', 'w', 'a', 'b', 't',
+                'p', 'j', 'v', 'o' };
+        
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Type a letter to see another! ");
+        char input = keyboard.findWithinHorizon(".", 0).charAt(0);
+		int index = 0;
+		
+		while (index < 26 && cipher[index] != input) {
+			index ++;
+		}
+        	if(index < 26) {
+					System.out.println("Your corresponding letter is: "+ plain[index]);
+				}
+		 keyboard.close();
+		 
+//		do {
+//			if(index < 26) {
+//				System.out.println("Here is your corresponding letter "+ plain[index]);
+//			}
+//		} while (index < 26 && cipher[index] != input){
+//			index++;
+//		}
+        
+	}
+
+	public static void totalGuests() throws FileNotFoundException {
+		 Scanner diskScanner = new Scanner(new File("occupancy"));
+	        int guestsIn[];
+	        guestsIn = new int[10];
+	        int totalNumGuests = 0;
+
+	        for (int roomNum = 0; roomNum < 10; roomNum++) {
+	            guestsIn[roomNum] = diskScanner.nextInt();
+	        }
+
+	        for (int roomNum = 0; roomNum < 10; roomNum++) {
+	            totalNumGuests += guestsIn[roomNum];
+	        }
+
+	        System.out.print("There are " +totalNumGuests+ " guests in the hotel");
+	               
+	        diskScanner.close();
+	    }
+		
+		
+
 
 	public static void findOneVancany() throws FileNotFoundException {
 		
