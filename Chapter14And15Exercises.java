@@ -1,18 +1,46 @@
 import java.util.Scanner;
 
+
 public class Chapter14And15Exercises {
 
+	enum Game {
+		rock, paper, scissors, shoe
+	}
 	public static void main(String[] args) {
 	// loopSoup();
 	// seeingStars();
 	// seeingStars1();
 	// repeatName();
 	// currencyConversion();
-		sampleDoWhile();
+	// sampleDoWhile();
+	// enumExample();
+	enumExample1();
+	
 	
 	}
+	public static void enumExample1() {
+		
+		for (Game leftReel : Game.values()) {
+			for (Game middleReel : Game.values()) {
+				System.out.println(leftReel + " " + middleReel);
+				}
+		}
+}
 	
 	
+	
+		public static void enumExample() {
+		
+			for (Game leftReel : Game.values()) {
+				for (Game middleReel : Game.values()) {
+					for (Game rightReel : Game.values()) {
+						System.out.println(leftReel + " " + middleReel + " "+ rightReel);
+					}
+				}
+			}
+	}
+
+
 		public static void sampleDoWhile() {
 			 Scanner keyboard = new Scanner(System.in);
 		        int num;

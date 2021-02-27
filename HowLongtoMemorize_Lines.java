@@ -42,7 +42,8 @@ public class HowLongtoMemorize_Lines {
 		System.out.println("\nIt will take you " + totalDays + " days to memorize the Qur'an.");
 		System.out.println("This will be " + years + " year(s), " + months + " month(s), and " + days + " day(s).");
 		System.out.println("Get Started...and Baaraka Allah feek");
-
+		
+		userInput.close();
 	}
 
 }
