@@ -57,7 +57,7 @@ public class HowLongToMemorize {
 		System.out.println("This will be " + years + " year(s), " + months + " month(s), and " + days + " day(s).");
 		System.out.println("Get Started...and Baaraka Allah feek");
 
-		//userInput1.close();
+		userInput1.close();
 	}
 
 		public static void howLongToMemorize_Lines() {
