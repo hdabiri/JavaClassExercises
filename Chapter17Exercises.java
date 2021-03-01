@@ -10,7 +10,7 @@ public class Chapter17Exercises {
 
 	public static void person1() {
 		
-		Person hidi = new Person(1,1); //Added parameters after making changes to the Person Class. This code will work without parameters.
+		Person hidi = new Person(); 
 		double bmi;
 		Scanner keyboard = new Scanner(System.in);
 		
@@ -28,9 +28,9 @@ public class Chapter17Exercises {
 	
 	public static void threePeople() {
 		
-		Person person01 = new Person(2,2);//Added parameters after making changes to the Person Class. This code will work without parameters.
-		Person person02 = new Person(3,3);//Added parameters after making changes to the Person Class. This code will work without parameters.
-		Person person03 = new Person(4,4);//Added parameters after making changes to the Person Class. This code will work without parameters.
+		Person person01 = new Person();
+		Person person02 = new Person();
+		Person person03 = new Person();
 		
 		double bmi1, bmi2, bmi3;
 		Scanner keyboard = new Scanner(System.in);

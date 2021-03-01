@@ -15,6 +15,11 @@ public class Person {
 		System.out.println("The Body Mass Index is: "+ bmi);
 		System.out.println();
 	}
+	
+	public Person() {
+		
+	}
+
 
 	
 }
