@@ -11,7 +11,7 @@ public class Country {
 		this.gdp = gdp;
 		
 		double ratio = debt/gdp;
-		System.out.println("The debt-to-GDP ratio for " +this+ "is: " + ratio);
+		System.out.println("The debt-to-GDP ratio for " +this+ " is: " + ratio);
 		
 		if (ratio <= 0.8) {
 			System.out.println("This is an acceptable ratio. Yaay!!");
