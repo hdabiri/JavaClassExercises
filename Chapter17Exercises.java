@@ -10,7 +10,7 @@ public class Chapter17Exercises {
 
 	public static void person1() {
 		
-		Person hidi = new Person();
+		Person hidi = new Person(); 
 		double bmi;
 		Scanner keyboard = new Scanner(System.in);
 		
