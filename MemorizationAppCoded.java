@@ -7,15 +7,16 @@ public class MemorizationAppCoded {
 		
 		int z = 0;
 		int y = 0;
-		MemorizationApp hidi = new MemorizationApp(z, "Hidayah");
-		System.out.println("=========================================");
-		System.out.println();
+		// MemorizationApp hidi = new MemorizationApp(z, "Hidayah");
+		// System.out.println("=========================================");
+		// System.out.println();
 		
 		Scanner userInput1 = new Scanner(System.in);
 		System.out.print("Please enter how many ayahs you want to memorize every day : ");
 		String x = userInput1.nextLine();
 		
-		MemorizationApp hidi2 = new MemorizationApp("Hidayah2", y);
+		MemorizationApp hidi2 = new MemorizationApp("Hidayah2", Integer.parseInt(x));
+		System.out.println(hidi2);
 		
 		userInput1.close();
 		

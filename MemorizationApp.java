@@ -10,14 +10,13 @@ public class MemorizationApp {
 	
 	
 	public MemorizationApp(String name, int linesPerDay) {
-		super();
 		this.name = name;
 		this.linesPerDay = linesPerDay;
 		
-		Scanner userInput = new Scanner(System.in);
-		System.out.print("Please enter how many lines you want to memorize every day " +name+ " : ");
-		String x = userInput.nextLine();
-		linesPerDay = Integer.parseInt(x);
+		// Scanner userInput = new Scanner(System.in);
+		//System.out.print("Please enter how many lines you want to memorize every day " +name+ " : ");
+		// String x = userInput.nextLine();
+		
 
 		int totalDays = (totalLines / linesPerDay);
 
@@ -30,7 +29,7 @@ public class MemorizationApp {
 		System.out.println("This will be " + years + " year(s), " + months + " month(s), and " + days + " day(s).");
 		System.out.println("Get Started...and Baaraka Allah feek, " +name);
 		
-		userInput.close();
+		// userInput.close();
 		
 	}
 
