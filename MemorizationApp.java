@@ -14,7 +14,7 @@ public class MemorizationApp {
 		this.name = name;
 		this.linesPerDay = linesPerDay;
 		
-		System.out.print("Please enter how many lines you want to memorize every day " +name+ " : ");
+		System.out.print("Please enter how many LINES you want to memorize every day " +name+ " : ");
 		String x = keyboard.nextLine();
 		linesPerDay = Integer.parseInt(x);
 
@@ -47,7 +47,7 @@ public class MemorizationApp {
 		this.versesPerDay = versesPerDay;
 		this.name = name;
 		
-		System.out.print("Please enter how many ayahs you want to memorize every day " +name+" : ");
+		System.out.print("Please enter how many AYAHS you want to memorize every day " +name+" : ");
 		String x = keyboard.nextLine();
 		versesPerDay = Integer.parseInt(x);
 
