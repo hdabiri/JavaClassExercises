@@ -2,21 +2,20 @@ import java.util.Scanner;
 
 public class MemorizationApp {
 		
-			int totalAyah = 6236;
-			int versesPerDay;
-			int totalLines = 8815;
-			int linesPerDay;
-			String name;
-	
+		static final int totalAyah = 6236;
+		static final int totalLines = 8815;	
+					 int versesPerDay;
+					 int linesPerDay;
+					 String name;
+		static Scanner keyboard = new Scanner(System.in);
 	
 	public MemorizationApp(String name, int linesPerDay) {
-		super();
+		
 		this.name = name;
 		this.linesPerDay = linesPerDay;
 		
-		Scanner userInput = new Scanner(System.in);
 		System.out.print("Please enter how many lines you want to memorize every day " +name+ " : ");
-		String x = userInput.nextLine();
+		String x = keyboard.nextLine();
 		linesPerDay = Integer.parseInt(x);
 
 		int totalDays = (totalLines / linesPerDay);
@@ -30,19 +29,26 @@ public class MemorizationApp {
 		System.out.println("This will be " + years + " year(s), " + months + " month(s), and " + days + " day(s).");
 		System.out.println("Get Started...and Baaraka Allah feek, " +name);
 		
-		userInput.close();
+		//keyboard.close();
+		
+		
 		
 	}
 
 
+	@Override
+	public String toString() {
+		return  name;
+	}
+
+
 	public MemorizationApp(int versesPerDay, String name) {
-		super();
+		
 		this.versesPerDay = versesPerDay;
 		this.name = name;
 		
-		Scanner userInput1 = new Scanner(System.in);
 		System.out.print("Please enter how many ayahs you want to memorize every day " +name+" : ");
-		String x = userInput1.nextLine();
+		String x = keyboard.nextLine();
 		versesPerDay = Integer.parseInt(x);
 
 		int totalDays = totalAyah / versesPerDay;
@@ -56,7 +62,7 @@ public class MemorizationApp {
 		System.out.println("This will be " + years + " year(s), " + months + " month(s), and " + days + " day(s).");
 		System.out.println("Get Started...and Baaraka Allah feek, "+name+"." );
 
-		userInput1.close();
+		//keyboard.close();
 	}
 	
 	
